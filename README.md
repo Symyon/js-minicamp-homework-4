@@ -7,6 +7,7 @@
 	* Q: Callback Functions
 
 	A: A callback function f() is a function that is send as an argument to the parameters of another function p(). 
+
 	Ex: f(p);
 	Function f() can call the function p() in its body of statements.
 
@@ -17,6 +18,7 @@
 	* Q: arguments array
 
 	A: A function f() can be called with one or more arguments even if the f() declaration didn't have parameters. Those arguments can be accessed as an array using keyword 'arguments'.
+
 	Ex: 
 	function f() {
 		for(var i = 0; i < arguments.length; i++) {
@@ -30,6 +32,7 @@
 	* Q: recursion
 
 	A: Recursion is a way of program execution when a function is calling itself in its body of instructions. This has a downside beeing prone to error of ifinite loop, as at some point the recursive calling has to stop.
+
 	Ex: 
 	function f(x) {
 	if(x <= 0) return x;
@@ -39,6 +42,7 @@
 	* Q: prototype
 
 	A: A prototype is a function that is defined for a class of objects and will be available for each object of that class. We use keyword 'prototype' to do that.
+
 	Ex: Let's say we take an existing class like 'String'.
 	String.prototype.printToConsole() = function () {
 		console.log('This is a prototype');
@@ -49,6 +53,7 @@
 	* Q: constructors
 
 	A: Constructors are a special function used to instantiate an object of a class. We use keyword "new" before the call of the function.
+	
 	Ex: 
 	function Dog(properties) {
 		this.name = properties.name;
